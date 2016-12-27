@@ -18,6 +18,9 @@ module.exports = {
     },
 
     module: {
+        preLoaders: [
+            { test: /\.ts$/, loader: 'tslint' }
+        ],
         loaders: [
             {
                 test: /\.ts$/,
@@ -54,6 +57,12 @@ module.exports = {
                 loader: 'expose?jQuery!expose?$'
             }
         ]
+    },
+
+    tslint: {
+        failOnHint: false,
+        emitErrors: false,
+        configuration: require('../tslint.json')
     },
 
     plugins: [
