@@ -26,6 +26,11 @@ module.exports = {
                 loader: 'null'
             },
             {
+                test: /\.scss$/,
+                exclude: /node_modules/,
+                loaders: ['raw-loader', 'sass-loader'] // sass-loader not scss-loader
+            },
+            {
                 test: /\.css$/,
                 exclude: helpers.root('src', 'app'),
                 loader: 'null'
@@ -37,4 +42,6 @@ module.exports = {
             }
         ]
     }
-}
+};
+
+
