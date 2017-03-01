@@ -1,0 +1,47 @@
+<main-header></main-header>
+<div class="row">
+    <div class="col-md-12">
+        content here
+    </div>
+
+    <div class="col-md-6">
+        <ul class="list-group" [dragula]='"first-bag"' data-sprint-container="abc">
+            <li class="list-group-item"><i class="fa fa-user handle"></i> Cras justo odio</li>
+            <li class="list-group-item"><i class="fa fa-user handle"></i> Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <ul class="list-group" [dragula]='"first-bag"'>
+            <li class="list-group-item"><i class="fa fa-user handle"></i> Cras justo odio</li>
+            <li class="list-group-item"><i class="fa fa-user handle"></i> Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </div>
+
+
+
+    <!--<div>-->
+        <!--<div class='wrapper'>-->
+            <!--<div class='container' [dragula]='"first-bag"'>-->
+                <!--<div>You can move these elements between these two containers</div>-->
+                <!--<div>Moving them anywhere else isn't quite possible</div>-->
+                <!--<div>There's also the possibility of moving elements around in the same container, changing their position</div>-->
+            <!--</div>-->
+            <!--<div class='container' [dragula]='"first-bag"'>-->
+                <!--<div>This is the default use case. You only need to specify the containers you want to use</div>-->
+                <!--<div>More interactive use cases lie ahead</div>-->
+                <!--<div>Make sure to check out the <a href='https://github.com/bevacqua/dragula#readme'>documentation on GitHub!</a></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <router-outlet></router-outlet>
+    </div>
+</div>

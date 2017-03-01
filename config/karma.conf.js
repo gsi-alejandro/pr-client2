@@ -1,6 +1,3 @@
-/**
- * Created by cervantes on 26/12/16.
- */
 var webpackConfig = require('./webpack.test');
 
 module.exports = function (config) {
@@ -27,7 +24,7 @@ module.exports = function (config) {
             noInfo: true
         },
 
-        reporters: ['mocha'],
+        reporters: ['progress'],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
