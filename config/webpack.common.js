@@ -5,6 +5,8 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
+var bourbon = require('bourbon').includePaths;
+var StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -44,7 +46,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
-                loaders: ['raw-loader', 'sass-loader'] // sass-loader not scss-loader
+                loaders: ['raw-loader', 'sass-loader?includePaths[]=' + bourbon] // sass-loader not scss-loader
             },
             {
                 test: /\.css$/,
@@ -70,6 +72,11 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery"
+        }),
+
+        new StyleLintPlugin({
+            configFile: '.stylelintrc.json',
+            files: 'src/**/*.scss'
         })
     ]
 };

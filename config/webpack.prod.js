@@ -3,6 +3,9 @@ var webpackMerge = require('webpack-merge');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var commonConfig = require('./webpack.common.js');
 var helpers = require('./helpers');
+var WebpackNotifierPlugin = require('webpack-notifier');
+var ProgressBarPlugin = require('progress-bar-webpack-plugin');
+var chalk = require('chalk');
 
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 
@@ -33,6 +36,14 @@ module.exports = webpackMerge(commonConfig, {
             htmlLoader: {
                 minimize: false // workaround for ng2
             }
+        }),
+        new WebpackNotifierPlugin({
+            excludeWarnings: false
+        }),
+
+        new ProgressBarPlugin({
+            format: chalk.blue('Webpack loading:') +
+            chalk.white(' [:bar] ') + chalk.green(':percent') + chalk.green(' (:elapsed seconds)')
         })
     ]
 });
