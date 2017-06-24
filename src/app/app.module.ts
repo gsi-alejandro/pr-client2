@@ -5,9 +5,8 @@ import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
-import { HeroesModule } from './heroes/heroes.module';
+import { AutomationStandaloneModule } from './automation-standalone/automation-standalone.module';
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -19,9 +18,8 @@ import { HeroesModule } from './heroes/heroes.module';
         FormsModule,
         HttpModule, JsonpModule,
         CoreModule,
-        SharedModule,
-        HeroesModule,
-        AppRoutingModule
+        AppRoutingModule,
+        AutomationStandaloneModule
     ]
 })
 export class AppModule { }

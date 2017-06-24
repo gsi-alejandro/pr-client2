@@ -1,0 +1,154 @@
+<div class="modal fade fc-modal fc-modal--primary automations-standalone-list-filter"
+     id="automations-standalone-list-filter-modal"
+     tabindex="-1"
+     role="dialog">
+    <div class="modal-dialog fc-modal__dialog" role="document">
+        <div class="modal-content fc-modal__content fc-modal__dialog--md">
+            <div class="modal-header fc-modal__header">
+                <button type="button" class="close fc-modal__btn-close" data-dismiss="modal"
+                        aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title fc-modal__title">
+                    <i class="fa fa-filter fc-color-primary"></i>  <span style="color:#333">Filter Automations</span>
+
+                    <div style="display: inline-block; margin-left: 112px; color: #333;">
+                        APPLIED FILTERS
+                        <span style="background: #205682;
+    padding: 2px 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    color: white;">0</span>
+                    </div>
+                </h4>
+            </div>
+            <div class="modal-body fc-modal__body" style="padding: 30px 15px 20px;">
+
+                <div class="fc-flex fc-flex--middle" style="margin-bottom: 10px;">
+                    <div class="fc-flex__col fc-flex__col--3 fc-form-label" style="padding-right: 15px;">
+                        Automation Name
+                    </div>
+                    <div class="fc-flex__col fc-flex__col--5 fc-no-padding-horizontal">
+                        <input type="text" class="fc-input-control fc-input-control--lg"
+                               [(ngModel)]="automationName"
+                               placeholder="Automation Name">
+                    </div>
+                    <div class="fc-flex__col fc-flex__col--3" style="padding-left: 10px;">
+                        <select class="fc-select-control fc-select-control--white fc-select-control--lg"
+                            [(ngModel)]="automationNameOperator">
+                            <option value="start_with">Starts With</option>
+                            <option value="end_with">Ends With</option>
+                            <option value="contain">Contains</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="fc-flex fc-flex--middle" style="margin-bottom: 10px;">
+                    <div class="fc-flex__col fc-flex__col--3 fc-form-label" style="padding-right: 15px;">
+                        Sequence
+                    </div>
+                    <div class="fc-flex__col fc-flex__col--5 fc-no-padding-horizontal">
+                        <input type="text" class="fc-input-control fc-input-control--lg"
+                               [(ngModel)]="sequenceName"
+                               placeholder="Sequence Name">
+                    </div>
+                    <div class="fc-flex__col fc-flex__col--3" style="padding-left: 10px;">
+                        <select class="fc-select-control fc-select-control--white fc-select-control--lg">
+                            <option value="start_with">Starts With</option>
+                            <option value="end_with">Ends With</option>
+                            <option value="contain" selected>Contains</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="fc-flex fc-flex--middle" style="margin-bottom: 10px;">
+                    <div class="fc-flex__col fc-flex__col--3 fc-form-label" style="padding-right: 15px;">
+                        Triggers
+                    </div>
+                    <div class="fc-flex__col fc-flex__col--5 fc-no-padding-horizontal">
+                        <select class="js-example-basic-multiple" multiple="multiple">
+                            <option>Opened Email</option>
+                            <option>Clicked Link</option>
+                            <option>Email Reply</option>
+                            <option>Ignored</option>
+                            <option>Tracking Pixel Fired</option>
+                            <option>Press #1 Call Transfer</option>
+                            <option>Product Purchase</option>
+                            <option>Inbound Call</option>
+                            <option>Updated Tag</option>
+                            <option>Completed Task</option>
+                            <option>Opportunity Stage Moved</option>
+                            <option>SMS Reply</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="fc-flex fc-flex--middle" style="margin-bottom: 10px;">
+                    <div class="fc-flex__col fc-flex__col--3 fc-form-label" style="padding-right: 15px;">
+                        Sequences Setup
+                    </div>
+                    <div class="fc-flex__col fc-flex__col--5 fc-no-padding-horizontal">
+                        <select class="fc-select-control fc-select-control--white fc-select-control--lg">
+                            <option value="">Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="fc-flex fc-flex--middle" style="margin-bottom: 10px;">
+                    <div class="fc-flex__col fc-flex__col--3 fc-form-label" style="padding-right: 15px;">
+                        Action Setup
+                    </div>
+                    <div class="fc-flex__col fc-flex__col--5 fc-no-padding-horizontal">
+                        <select class="fc-select-control fc-select-control--white fc-select-control--lg">
+                            <option value="">Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="fc-flex fc-flex--middle" style="margin-bottom: 10px;">
+                    <div class="fc-flex__col fc-flex__col--3 fc-form-label" style="padding-right: 15px;">
+                        Activities Setup
+                    </div>
+                    <div class="fc-flex__col fc-flex__col--5 fc-no-padding-horizontal">
+                        <select class="fc-select-control fc-select-control--white fc-select-control--lg">
+                            <option value="">Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="fc-flex fc-flex--middle" style="margin-bottom: 10px;">
+                    <div class="fc-flex__col fc-flex__col--3 fc-form-label" style="padding-right: 15px;">
+                        Status
+                    </div>
+                    <div class="fc-flex__col fc-flex__col--5 fc-no-padding-horizontal">
+                        <select class="fc-select-control fc-select-control--white fc-select-control--lg">
+                            <option value="">Select</option>
+                            <option value="1">Active Automation</option>
+                            <option value="0">Inactive Automation</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="fc-flex fc-flex--spaceBetween" style="padding: 0 20px; margin-top: 150px;">
+                    <button class="fc-btn fc-btn--warning" (click)="reset();">
+                        <i class="fa fa-fw fa-refresh"></i>
+                        Clear Filters
+                    </button>
+
+                    <button class="fc-btn fc-btn--primary"
+                            (click)="filter();"
+                            data-dismiss="modal">
+                        <i class="fa fa-filter"></i>
+                        Filter
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

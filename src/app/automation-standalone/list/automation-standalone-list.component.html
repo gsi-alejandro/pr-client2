@@ -1,0 +1,562 @@
+<div class="automation-standalone-list">
+    <div class="lcc-dashboard-toolbar">
+        <div class="lcc-dashboard-title">
+            <i class="fa fa-bolt lcc-dashboard-title__icon"></i>
+            <span>Automation</span>
+        </div>
+
+        <div class="fc-flex">
+            <div class="fc-input-icon fc-input-icon--sm" style="margin-right: 3px;">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <button class="fc-btn fc-btn--primary fc-btn--sm"
+                    data-toggle="modal" data-target="#automations-standalone-list-filter-modal">
+                <i class="fa fa-fw fa-filter"></i>
+                Filter
+            </button>
+        </div>
+
+        <div>
+            <button class="fc-btn fc-btn--warning fc-btn--sm"
+                    data-toggle="modal" data-target="#automation-standalone-add-modal">
+                <i class="fa fa-fw fa-plus"></i>
+                Add Automation
+            </button>
+        </div>
+    </div>
+
+    <table class="fc-table-split automation-standalone-list__table">
+        <thead>
+        <tr class="fc-table-split__row fc-table-split__row--rounded">
+            <th>AUTOMATION NAME</th>
+            <th>TRIGGERS</th>
+            <th>AUTOMATION</th>
+            <th>SEQUENCE</th>
+            <th>STATUS</th>
+            <th>ACTIONS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="fc-table-split__row fc-table-split__row--border-primary fc-table-split__row--rounded">
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    Name Of The Automation Can Be <br> 2 Lines Long Too.
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-envelope-open"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Opened Email</div>"></i>
+                    <i class="fa fa-fw fa-code"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Tracking Pixel Fired</div>"></i>
+                    <i class="fa fa-fw fa-hand-pointer-o"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Clicked Link</div>"></i>
+                    <i class="fa fa-fw fa-tag" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Updated Tag</div>"></i>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-bullhorn"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Sequences Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-bolt"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Actions Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-check"></i>
+                    <span class="fc-color-danger" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>No Activities Are Setup</div>">No</span>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <div>
+                        <i class="fa fa-fw fa-flag fc-color-primary"></i> Day Lead Magnet
+                    </div>
+                    <div>
+                        <i class="fa fa-fw fa-flag fc-color-danger"></i> Day Fire Sale
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-circle fc-color-primary"></i>
+                    <span>Active</span>
+                </div>
+
+            </td>
+            <td>
+                <div class="fc-table-split__btn-actions"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Pause</div>">
+                    <i class="fa fa-fw fa-pause"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-primary"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Edit</div>">
+                    <i class="fa fa-fw fa-edit"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-danger"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Delete</div>">
+                    <i class="fa fa-fw fa-trash"></i>
+                </div>
+            </td>
+        </tr>
+
+        <tr class="fc-table-split__row fc-table-split__row--border-primary fc-table-split__row--rounded">
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    Name Of The Automation Can Be <br> 2 Lines Long Too.
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-envelope-open"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Opened Email</div>"></i>
+                    <i class="fa fa-fw fa-code"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Tracking Pixel Fired</div>"></i>
+                    <i class="fa fa-fw fa-hand-pointer-o"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Clicked Link</div>"></i>
+                    <i class="fa fa-fw fa-tag" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Updated Tag</div>"></i>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-bullhorn"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Sequences Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-bolt"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Actions Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-check"></i>
+                    <span class="fc-color-danger" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>No Activities Are Setup</div>">No</span>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <div class="fc-color-gray">
+                        <i class="fa fa-fw fa-ban"></i> None
+                    </div>
+                    <div>
+                        <i class="fa fa-fw fa-flag fc-color-danger"></i> Day Fire Sale
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-circle fc-color-primary"></i>
+                    <span>Active</span>
+                </div>
+
+            </td>
+            <td>
+                <div class="fc-table-split__btn-actions"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Pause</div>">
+                    <i class="fa fa-fw fa-pause"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-primary"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Edit</div>">
+                    <i class="fa fa-fw fa-edit"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-danger"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Delete</div>">
+                    <i class="fa fa-fw fa-trash"></i>
+                </div>
+            </td>
+        </tr>
+        <tr class="fc-table-split__row fc-table-split__row--border-primary fc-table-split__row--rounded">
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    Name Of The Automation Can Be <br> 2 Lines Long Too.
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-envelope-open"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Opened Email</div>"></i>
+                    <i class="fa fa-fw fa-code"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Tracking Pixel Fired</div>"></i>
+                    <i class="fa fa-fw fa-hand-pointer-o"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Clicked Link</div>"></i>
+                    <i class="fa fa-fw fa-tag" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Updated Tag</div>"></i>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-bullhorn"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Sequences Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-bolt"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Actions Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-check"></i>
+                    <span class="fc-color-danger" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>No Activities Are Setup</div>">No</span>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <div class="fc-color-gray">
+                        <i class="fa fa-fw fa-ban"></i> None
+                    </div>
+                    <div class="fc-color-gray">
+                        <i class="fa fa-fw fa-ban"></i> None
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-circle fc-color-primary"></i>
+                    <span>Active</span>
+                </div>
+
+            </td>
+            <td>
+                <div class="fc-table-split__btn-actions"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Pause</div>">
+                    <i class="fa fa-fw fa-pause"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-primary"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Edit</div>">
+                    <i class="fa fa-fw fa-edit"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-danger"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Delete</div>">
+                    <i class="fa fa-fw fa-trash"></i>
+                </div>
+            </td>
+        </tr>
+        <tr class="fc-table-split__row fc-table-split__row--border-gray fc-table-split__row--rounded">
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    Name Of The Automation Can Be <br> 2 Lines Long Too.
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-envelope-open"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Opened Email</div>"></i>
+                    <i class="fa fa-fw fa-code"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Tracking Pixel Fired</div>"></i>
+                    <i class="fa fa-fw fa-hand-pointer-o"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Clicked Link</div>"></i>
+                    <i class="fa fa-fw fa-tag" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Updated Tag</div>"></i>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-bullhorn"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Sequences Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-bolt"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Actions Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-check"></i>
+                    <span class="fc-color-danger" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>No Activities Are Setup</div>">No</span>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <div>
+                        <i class="fa fa-fw fa-flag fc-color-primary"></i> Day Lead Magnet
+                    </div>
+                    <div>
+                        <i class="fa fa-fw fa-flag fc-color-danger"></i> Day Fire Sale
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-circle fc-color-danger"></i>
+                    <span>Inactive</span>
+                </div>
+
+            </td>
+            <td>
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--dark-blue"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Play</div>">
+                    <i class="fa fa-fw fa-play"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-primary"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Edit</div>">
+                    <i class="fa fa-fw fa-edit"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-danger"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Delete</div>">
+                    <i class="fa fa-fw fa-trash"></i>
+                </div>
+            </td>
+        </tr>
+        <tr class="fc-table-split__row fc-table-split__row--border-primary fc-table-split__row--rounded">
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    Name Of The Automation Can Be <br> 2 Lines Long Too.
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-envelope-open"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Opened Email</div>"></i>
+                    <i class="fa fa-fw fa-code"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Tracking Pixel Fired</div>"></i>
+                    <i class="fa fa-fw fa-hand-pointer-o"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Clicked Link</div>"></i>
+                    <i class="fa fa-fw fa-tag" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Updated Tag</div>"></i>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-bullhorn"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Sequences Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-bolt"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Actions Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-check"></i>
+                    <span class="fc-color-danger" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>No Activities Are Setup</div>">No</span>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <div>
+                        <i class="fa fa-fw fa-flag fc-color-primary"></i> Day Lead Magnet
+                    </div>
+                    <div>
+                        <i class="fa fa-fw fa-flag fc-color-danger"></i> Day Fire Sale
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-circle fc-color-primary"></i>
+                    <span>Active</span>
+                </div>
+
+            </td>
+            <td>
+                <div class="fc-table-split__btn-actions"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Pause</div>">
+                    <i class="fa fa-fw fa-pause"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-primary"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Edit</div>">
+                    <i class="fa fa-fw fa-edit"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-danger"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Delete</div>">
+                    <i class="fa fa-fw fa-trash"></i>
+                </div>
+            </td>
+        </tr>
+        <tr class="fc-table-split__row fc-table-split__row--border-primary fc-table-split__row--rounded">
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    Name Of The Automation Can Be <br> 2 Lines Long Too.
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-envelope-open"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Opened Email</div>"></i>
+                    <i class="fa fa-fw fa-code"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Tracking Pixel Fired</div>"></i>
+                    <i class="fa fa-fw fa-hand-pointer-o"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Clicked Link</div>"></i>
+                    <i class="fa fa-fw fa-tag" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Updated Tag</div>"></i>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-bullhorn"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Sequences Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-bolt"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Actions Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-check"></i>
+                    <span class="fc-color-danger" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>No Activities Are Setup</div>">No</span>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <div>
+                        <i class="fa fa-fw fa-flag fc-color-primary"></i> Day Lead Magnet
+                    </div>
+                    <div>
+                        <i class="fa fa-fw fa-flag fc-color-danger"></i> Day Fire Sale
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-circle fc-color-primary"></i>
+                    <span>Active</span>
+                </div>
+
+            </td>
+            <td>
+                <div class="fc-table-split__btn-actions"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Pause</div>">
+                    <i class="fa fa-fw fa-pause"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-primary"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Edit</div>">
+                    <i class="fa fa-fw fa-edit"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-danger"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Delete</div>">
+                    <i class="fa fa-fw fa-trash"></i>
+                </div>
+            </td>
+        </tr>
+        <tr class="fc-table-split__row fc-table-split__row--border-primary fc-table-split__row--rounded">
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    Name Of The Automation Can Be <br> 2 Lines Long Too.
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-envelope-open"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Opened Email</div>"></i>
+                    <i class="fa fa-fw fa-code"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Tracking Pixel Fired</div>"></i>
+                    <i class="fa fa-fw fa-hand-pointer-o"
+                       data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Clicked Link</div>"></i>
+                    <i class="fa fa-fw fa-tag" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                       data-content="<div class='fc-popover-container'>Updated Tag</div>"></i>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-fw fa-bullhorn"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Sequences Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-bolt"></i>
+                    <span class="fc-color-primary" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>Actions Are Setup</div>">Yes</span>
+
+                    <i class="fa fa-fw fa-check"></i>
+                    <span class="fc-color-danger" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                          data-content="<div class='fc-popover-container'>No Activities Are Setup</div>">No</span>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <div>
+                        <i class="fa fa-fw fa-flag fc-color-primary"></i> Day Lead Magnet
+                    </div>
+                    <div>
+                        <i class="fa fa-fw fa-flag fc-color-danger"></i> Day Fire Sale
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="automation-standalone-list__table-divider">
+                    <i class="fa fa-circle fc-color-primary"></i>
+                    <span>Active</span>
+
+                </div>
+
+            </td>
+            <td>
+                <div class="fc-table-split__btn-actions"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Pause</div>">
+                    <i class="fa fa-fw fa-pause"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-primary"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Edit</div>">
+                    <i class="fa fa-fw fa-edit"></i>
+                </div>
+
+                <div class="fc-table-split__btn-actions fc-table-split__btn-actions--hover-danger"
+                     data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"
+                     data-content="<div class='lcc-popover-container'>Delete</div>">
+                    <i class="fa fa-fw fa-trash"></i>
+                </div>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<mr-z mrX></mr-z> {{testFilter | mrY: 'Hello'}}
+
+<automaiton-standalone-list-filter></automaiton-standalone-list-filter>

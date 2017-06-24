@@ -20,6 +20,7 @@ module.exports = {
     },
 
     module: {
+        exprContextCritical: false,  // to remove angular warning - https://github.com/angular/angular/issues/11580
         rules: [
             {
                 enforce: 'pre',
@@ -77,6 +78,6 @@ module.exports = {
         new StyleLintPlugin({
             configFile: '.stylelintrc.json',
             files: 'src/**/*.scss'
-        })
+        }),
     ]
 };
