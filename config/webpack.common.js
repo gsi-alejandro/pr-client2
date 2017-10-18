@@ -5,7 +5,6 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
-var bourbon = require('bourbon').includePaths;
 var StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
@@ -40,19 +39,24 @@ module.exports = {
                 loader: 'file-loader?name=fonts/[name].[ext]'
             },
             {
-                test: /\.css$/,
-                exclude: helpers.root('src', 'app'),
-                loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
-            },
-            {
-                test: /\.scss$/,
-                exclude: /node_modules/,
-                loaders: ['raw-loader', 'sass-loader?includePaths[]=' + bourbon] // sass-loader not scss-loader
-            },
-            {
-                test: /\.css$/,
-                include: helpers.root('src', 'app'),
-                loader: 'raw-loader'
+                test: /\.(css|scss)$/,
+                loaders: ['to-string-loader'].concat(ExtractTextPlugin.extract({     // Sharpen Eye With this bug of webpack
+                    fallback: 'style-loader',
+                    use: [
+                        { loader: 'css-loader', options: { importLoaders: 1 } },
+                        'postcss-loader',
+                        { loader: 'sass-loader'}
+                    ]
+                }))
+                // exclude: '/node_modules/',
+                // use: ExtractTextPlugin.extract({
+                //     fallback: 'style-loader',
+                //     use: [
+                //         { loader: 'css-loader', options: { importLoaders: 1 } },
+                //         'postcss-loader',
+                //         { loader: 'sass-loader'}
+                //     ]
+                // })
             },
             {
                 test: require.resolve('jquery'),
@@ -78,6 +82,6 @@ module.exports = {
         new StyleLintPlugin({
             configFile: '.stylelintrc.json',
             files: 'src/**/*.scss'
-        }),
+        })
     ]
 };

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { AutomationStandaloneModule } from './automation-standalone/automation-standalone.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -19,7 +19,7 @@ import { AutomationStandaloneModule } from './automation-standalone/automation-s
         HttpModule, JsonpModule,
         CoreModule,
         AppRoutingModule,
-        AutomationStandaloneModule
+        SharedModule
     ]
 })
 export class AppModule { }

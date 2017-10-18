@@ -15,5 +15,5 @@ import 'moment';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'dragula/dist/dragula.css';
-import 'font-awesome/css/font-awesome.css';
+import 'font-awesome/scss/font-awesome.scss';
 // import 'rxjs';
